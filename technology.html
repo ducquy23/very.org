@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		  content="Privacy-first authentication designed to secure billions of humans, not just devices.">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://very.org/technology/"><!-- Google Search Console verification -->
+	<!-- Favicon -->
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<link rel="icon" type="image/x-icon" sizes="32x32 16x16" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="192x192" href="/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://very.org/technology/">
+	<meta property="og:title" content="Technology — VeryAI">
+	<meta property="og:description"
+		  content="Privacy-first authentication designed to secure billions of humans, not just devices.">
+	<meta property="og:image" content="https://very.org/images/og-default.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="VeryAI">
+	<meta property="og:locale" content="en_US"><!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@veryai">
+	<meta name="twitter:creator" content="@veryai">
+	<meta name="twitter:title" content="Technology — VeryAI">
+	<meta name="twitter:description"
+		  content="Privacy-first authentication designed to secure billions of humans, not just devices.">
+	<meta name="twitter:image" content="https://very.org/images/og-default.jpg"><!-- JSON-LD Structured Data -->
+	<script type="application/ld+json">{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "VeryAI",
+		"url": "https://very.org",
+		"logo": "https://very.org/images/veryai-logo-white.svg",
+		"sameAs": [
+			"https://x.com/veryai",
+			"https://www.linkedin.com/company/very-ai",
+			"https://discord.gg/veryai"
+		],
+		"description": "VeryAI is the first-ever Proof of Reality — a defence layer for the digital world protecting people, platforms, and markets from AI-driven fraud, deepfakes, and synthetic identities.",
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"email": "support@very.org",
+			"contactType": "customer support"
+		}
+	}</script><!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+	<!-- Google Analytics --><title>Technology — VeryAI</title><!-- Hotjar / Contentsquare -->
+	<script src="https://t.contentsquare.net/uxa/e885523bb9bbe.js" async></script>
+	<link rel="stylesheet" href="/_astro/api-reference.DrKsQ4Rz.css">
+	<style>#navbar-wrapper {
+		position: fixed;
+		left: 0;
+		right: 0
+	}
+	</style>
+</head>
+<body class="min-h-screen bg-bg-default text-text-default">
+<div id="navbar-wrapper" class="sticky top-0 z-50 pt-3 transition-[padding] duration-500 ease-out">
+	<nav id="navbar" class="border border-transparent transition-all duration-500 ease-out navbar-dark bg-transparent">
+		<div class="relative max-w-[1400px] mx-auto flex items-center justify-between px-6 h-[60px]"> <!-- Logo --> <a
+				href="/" class="flex items-center cursor-pointer"> <img src="/images/veryai-logo-white.svg" alt="VeryAI"
+																		class="nav-logo h-[28px] w-auto brightness-0 transition-all duration-300">
+		</a> <!-- Center nav links (visible on md+) -->
+			<div class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2"><a href="/privacy"
+																								 class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Privacy </a><a href="/technology"
+							   class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Technology </a><a href="/docs"
+								  class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Developers </a><a href="/blog"
+								  class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Blog </a></div> <!-- Right side icons -->
+			<div class="flex items-center gap-2"> <!-- X / Twitter --> <a href="https://x.com/veryai" target="_blank"
+																		  rel="noopener"
+																		  class="nav-social hidden sm:flex items-center justify-center size-[40px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-all duration-300 cursor-pointer"
+																		  aria-label="X (Twitter)">
+				<svg class="size-[16px]" viewBox="0 0 24 24" fill="currentColor">
+					<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+				</svg>
+			</a> <!-- Sign up -->
+				<button id="nav-join-btn"
+						class="nav-social hidden sm:flex items-center gap-1 h-[40px] pl-4 pr-3 rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-all duration-300 cursor-pointer font-semibold text-[14px] text-black whitespace-nowrap">
+					Sign up
+					<svg class="size-[16px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+						<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</button> <!-- Hamburger / Menu button (mobile only) -->
+				<button id="menu-btn"
+						class="md:hidden flex items-center justify-center size-[40px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-all duration-300 cursor-pointer"
+						aria-label="Open menu" aria-expanded="false">
+					<svg class="size-[18px] menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						 stroke-width="2">
+						<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"></path>
+					</svg>
+					<svg class="size-[18px] menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						 stroke-width="2">
+						<path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</nav> <!-- Floating dropdown menu -->
+	<div id="nav-dropdown"
+		 class="hidden absolute right-4 sm:right-6 top-[calc(100%-4px)] w-[200px] bg-white rounded-[12px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-gray-100 overflow-hidden opacity-0 translate-y-[-8px] transition-all duration-200 ease-out z-50">
+		<div class="flex flex-col py-2"><a href="/privacy"
+										   class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Privacy </a><a href="/technology"
+						   class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Technology </a><a href="/docs"
+							  class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Developers </a><a href="/blog"
+							  class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Blog </a></div> <!-- Social icons for mobile only -->
+		<div class="sm:hidden flex items-center gap-2 px-4 py-3 border-t border-gray-100"><a href="https://x.com/veryai"
+																							 target="_blank"
+																							 rel="noopener"
+																							 class="flex items-center justify-center size-[36px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors cursor-pointer"
+																							 aria-label="X (Twitter)">
+			<svg class="size-[14px]" viewBox="0 0 24 24" fill="currentColor">
+				<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+			</svg>
+		</a> <a href="https://download.very.org" target="_blank" rel="noopener"
+				class="flex items-center justify-center size-[36px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors cursor-pointer"
+				aria-label="Download App">
+			<svg class="size-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke-linecap="round"
+					  stroke-linejoin="round"></path>
+			</svg>
+		</a></div>
+	</div>
+</div> <!-- Click-outside overlay to close menu -->
+<div id="nav-overlay" class="hidden fixed inset-0 z-40"></div>
+<script type="module">const d = document.getElementById("navbar-wrapper"), e = document.getElementById("navbar"),
+    n = document.getElementById("menu-btn"), t = document.getElementById("nav-dropdown"),
+    o = document.getElementById("nav-overlay"), v = n?.querySelector(".menu-open"), m = n?.querySelector(".menu-close"),
+    c = e?.classList.contains("navbar-dark"), l = e?.classList.contains("navbar-transparent");
+let s = !1;
+
+function i(a) {
+    s = a ?? !s, n?.setAttribute("aria-expanded", String(s)), v?.classList.toggle("hidden", s), m?.classList.toggle("hidden", !s), s ? (t?.classList.remove("hidden"), o?.classList.remove("hidden"), requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            t?.classList.remove("opacity-0", "translate-y-[-8px]"), t?.classList.add("opacity-100", "translate-y-0")
+        })
+    })) : (t?.classList.add("opacity-0", "translate-y-[-8px]"), t?.classList.remove("opacity-100", "translate-y-0"), o?.classList.add("hidden"), setTimeout(() => t?.classList.add("hidden"), 200))
+}
+
+n?.addEventListener("click", () => i());
+o?.addEventListener("click", () => i(!1));
+const L = document.getElementById("nav-join-btn");
+L?.addEventListener("click", () => {
+    const a = navigator.userAgent,
+        b = /iPhone|iPad|iPod/.test(a) || navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1,
+        u = /Android/.test(a);
+    if (b) {
+        window.location.href = "https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869";
+        return
+    }
+    if (u) {
+        window.location.href = "https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share";
+        return
+    }
+    window.__openJoinModal?.()
+});
+t?.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => i(!1))
+});
+let r = !1;
+const g = 40;
+
+function p() {
+    const a = window.scrollY > g;
+    a !== r && (r = a, r ? (d?.classList.add("px-4"), e?.classList.add("rounded-[16px]", "shadow-[0_4px_24px_rgba(0,0,0,0.06)]", "border-white/40"), e?.classList.remove("border-b-white/30"), c ? (e?.classList.remove("navbar-dark", "bg-transparent"), e?.classList.add("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150")) : l && (e?.classList.remove("navbar-transparent", "bg-transparent"), e?.classList.add("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150"))) : (d?.classList.remove("px-4"), e?.classList.remove("rounded-[16px]", "shadow-[0_4px_24px_rgba(0,0,0,0.06)]", "border-white/40"), c ? (e?.classList.add("navbar-dark", "bg-transparent"), e?.classList.remove("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150", "border-b-white/30")) : l ? (e?.classList.add("navbar-transparent", "bg-transparent"), e?.classList.remove("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150", "border-b-white/30")) : e?.classList.add("border-b-white/30")))
+}
+
+window.addEventListener("scroll", p, {passive: !0});
+p();</script>
+<main><!-- ==================== HERO ==================== -->
+	<section class="relative bg-black overflow-hidden"><!-- Background Layer 1: Blurred gradient -->
+		<div class="absolute inset-0 opacity-40 flex items-center justify-center"><img
+				src="/images/hero-bg-gradient-v2.webp" alt="" class="w-full h-full object-cover blur-[97px]"
+				loading="eager" fetchpriority="high"></div><!-- Background Layer 2: Saturation texture -->
+		<div class="absolute inset-0 mix-blend-saturation" style="left:-115px;top:-277px;width:calc(100% + 230px);"><img
+				src="/images/hero-texture-v2.webp" alt="" class="w-full h-full object-cover" loading="eager"></div>
+		<!-- Background Layer 3: Luminosity overlay -->
+		<div class="absolute inset-0 mix-blend-luminosity"><img src="/images/hero-overlay-v2.webp" alt=""
+																class="w-full h-full object-cover" loading="eager">
+		</div><!-- Hero Content -->
+		<div class="relative z-10 min-h-screen flex items-center">
+			<div class="w-full max-w-[1307px] mx-auto px-6 lg:px-8 py-[100px]">
+				<div class="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-[80px] xl:gap-[120px]">
+					<!-- Left: Large heading -->
+					<div class="lg:max-w-[60%] xl:max-w-[720px] lg:shrink-0"><h1 class="hero-heading">
+						Technology built for an AI&#8209;driven future
+					</h1></div><!-- Right: Label + Description + CTAs -->
+					<div class="flex-1 flex flex-col gap-6">
+						<div class="flex flex-col gap-4"><p
+								class="font-inter text-[13px] sm:text-[14px] font-semibold text-white/50 uppercase tracking-[1.5px]">
+							Technology
+						</p>
+							<p class="font-inter text-[16px] sm:text-[18px] lg:text-[20px] text-white/90 leading-[1.6] max-w-[420px]">
+								Authentication designed to secure billions of humans, not just devices.
+							</p></div>
+						<div class="flex flex-wrap gap-3">
+							<button class="join-cta inline-flex items-center gap-1 bg-white text-black font-inter font-semibold text-[15px] h-[52px] pl-6 pr-4 rounded-full hover:bg-white/90 transition-colors cursor-pointer">
+								Sign up
+								<svg class="size-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+									 stroke-width="2.5">
+									<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+							<a href="/docs/developers/introduction"
+							   class="inline-flex items-center gap-1 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-inter font-semibold text-[15px] h-[52px] pl-6 pr-4 rounded-full transition-colors">
+								Integrate VeryAI
+								<svg class="size-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+									 stroke-width="2.5">
+									<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- ==================== INTRO TEXT ==================== -->
+	<section class="bg-bg-default px-4 py-16 lg:py-24">
+		<div class="reveal max-w-[900px] mx-auto flex flex-col gap-8"><p
+				class="text-[20px] lg:text-[28px] font-medium text-text-default tracking-[-0.5px] leading-[1.4]">
+			VeryAI unites next-gen palmprint biometrics with AI-powered deepfake detection to enable effortless,
+			hardware-free authentication.
+		</p>
+			<p class="text-[16px] lg:text-[20px] text-text-muted leading-[1.5]">
+				With 28M+ scans and over a decade of R&D, VeryAI delivers unmatched accuracy and protection in the age
+				of generative fraud.
+			</p><!-- Quick stats strip -->
+			<div class="flex flex-wrap items-center gap-x-[48px] gap-y-[16px] pt-[8px]">
+				<div class="flex items-baseline gap-[8px]"><span
+						class="text-[32px] lg:text-[40px] font-medium text-text-default tracking-[-1.5px] leading-none">28M+</span><span
+						class="text-[13px] text-text-muted">Scans</span></div>
+				<div class="hidden sm:block w-[1px] h-[28px] bg-border-default"></div>
+				<div class="flex items-baseline gap-[8px]"><span
+						class="text-[32px] lg:text-[40px] font-medium text-text-default tracking-[-1.5px] leading-none">10+</span><span
+						class="text-[13px] text-text-muted">Years R&D</span></div>
+				<div class="hidden sm:block w-[1px] h-[28px] bg-border-default"></div>
+				<div class="flex items-baseline gap-[8px]"><span
+						class="text-[32px] lg:text-[40px] font-medium text-text-default tracking-[-1.5px] leading-none">10x</span><span
+						class="text-[13px] text-text-muted">More Accurate</span></div>
+			</div>
+		</div>
+	</section><!-- ==================== 001 - INNOVATION GAP ==================== -->
+	<section class="bg-bg-default px-4 py-12 lg:py-16 border-t border-border-default">
+		<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-8 lg:gap-16">
+			<div class="reveal flex flex-row items-start gap-[16px]"><span
+					class="inline-flex items-center justify-center size-[48px] rounded-full bg-very-black text-white text-[14px] font-medium shrink-0">
+001
+</span>
+				<h2 class="text-[28px] lg:text-[40px] font-medium text-text-default tracking-[-1.6px] leading-[1.1]">
+					Innovation gap
+				</h2></div>
+			<div class="reveal flex flex-col gap-6">
+				<div class="border-l-[3px] border-bg-brand pl-[20px]"><p
+						class="text-[16px] lg:text-[18px] text-text-muted leading-[1.6]">
+					Generative AI is fueling new fraud&mdash;deepfakes, cloned voices, forged documents&mdash;that
+					traditional biometrics and KYC can't stop. VeryAI combines palmprint authentication with proprietary
+					deepfake and AI-detection technology, creating a layered defense that blocks both spoofing and the
+					growing wave of AI-generated attacks.
+				</p></div>
+				<div class="flex flex-wrap gap-[8px]"><span
+						class="inline-flex items-center h-[28px] px-[12px] rounded-full bg-bg-brand/8 text-[12px] font-medium text-bg-brand">Anti-Deepfake</span><span
+						class="inline-flex items-center h-[28px] px-[12px] rounded-full bg-bg-brand/8 text-[12px] font-medium text-bg-brand">Voice Clone Detection</span><span
+						class="inline-flex items-center h-[28px] px-[12px] rounded-full bg-bg-brand/8 text-[12px] font-medium text-bg-brand">Document Forgery</span>
+				</div>
+			</div>
+		</div>
+	</section><!-- ==================== 002 - AI AND DEEPFAKE THREAT ==================== -->
+	<section class="bg-[#f4f6fb] px-4 py-12 lg:py-16">
+		<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-8 lg:gap-16">
+			<div class="reveal flex flex-row items-start gap-[16px]"><span
+					class="inline-flex items-center justify-center size-[48px] rounded-full bg-very-black text-white text-[14px] font-medium shrink-0">
+002
+</span>
+				<h2 class="text-[28px] lg:text-[40px] font-medium text-text-default tracking-[-1.6px] leading-[1.1]">
+					AI and deepfake threat
+				</h2></div>
+			<div class="reveal flex flex-col gap-6"><p class="text-[16px] lg:text-[18px] text-text-muted leading-[1.6]">
+				Generative AI enables synthetic identities, cloned voices, deepfakes, and forged documents that evade
+				traditional biometrics. VeryAI counters these threats with proprietary classifiers for deepfake video,
+				detectors for synthetic images and audio, and forgery checks for documents&mdash;layered alongside
+				palmprint authentication to resist biometric spoofing and AI-driven fraud.
+			</p><!-- Threat categories -->
+				<div class="grid grid-cols-2 sm:grid-cols-4 gap-[12px]">
+					<div class="bg-white rounded-[8px] p-[16px] flex flex-col items-center gap-[8px] text-center">
+						<svg class="size-[20px] text-text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							 stroke-width="1.5">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								  d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"></path>
+						</svg>
+						<span class="text-[12px] font-medium text-text-default">Video</span></div>
+					<div class="bg-white rounded-[8px] p-[16px] flex flex-col items-center gap-[8px] text-center">
+						<svg class="size-[20px] text-text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							 stroke-width="1.5">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								  d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"></path>
+						</svg>
+						<span class="text-[12px] font-medium text-text-default">Audio</span></div>
+					<div class="bg-white rounded-[8px] p-[16px] flex flex-col items-center gap-[8px] text-center">
+						<svg class="size-[20px] text-text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							 stroke-width="1.5">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								  d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3 18.75h18M3 5.25h18"></path>
+						</svg>
+						<span class="text-[12px] font-medium text-text-default">Images</span></div>
+					<div class="bg-white rounded-[8px] p-[16px] flex flex-col items-center gap-[8px] text-center">
+						<svg class="size-[20px] text-text-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							 stroke-width="1.5">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								  d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path>
+						</svg>
+						<span class="text-[12px] font-medium text-text-default">Documents</span></div>
+				</div>
+			</div>
+		</div>
+	</section><!-- ==================== 003 - PALM SCAN: HOW IT WORKS ==================== -->
+	<section class="bg-bg-default px-4 py-12 lg:py-16 border-t border-border-default">
+		<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-8 lg:gap-16">
+			<div class="reveal flex flex-row items-start gap-[16px]"><span
+					class="inline-flex items-center justify-center size-[48px] rounded-full bg-very-black text-white text-[14px] font-medium shrink-0">
+003
+</span>
+				<h2 class="text-[28px] lg:text-[40px] font-medium text-text-default tracking-[-1.6px] leading-[1.1]">
+					Palm scan: how it works
+				</h2></div>
+			<div class="flex items-start w-full">
+				<div class="reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full"><!-- Capture -->
+					<div class="reveal card-lift relative border border-border-default rounded-[8px] p-6 flex flex-col gap-3">
+						<div class="flex items-center justify-between"><span
+								class="text-[12px] font-medium text-text-muted uppercase tracking-wider">Step 1</span>
+							<svg class="size-[20px] text-text-active" viewBox="0 0 24 24" fill="none"
+								 stroke="currentColor" stroke-width="1.5">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									  d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"></path>
+								<path stroke-linecap="round" stroke-linejoin="round"
+									  d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"></path>
+							</svg>
+						</div>
+						<h3 class="text-[18px] font-medium text-text-default tracking-[-0.5px]">Capture</h3>
+						<p class="text-[14px] text-text-muted leading-[1.5]">Palm scanned by any smartphone camera</p>
+					</div><!-- Process -->
+					<div class="reveal card-lift relative border border-border-default rounded-[8px] p-6 flex flex-col gap-3">
+						<div class="flex items-center justify-between"><span
+								class="text-[12px] font-medium text-text-muted uppercase tracking-wider">Step 2</span>
+							<svg class="size-[20px] text-text-active" viewBox="0 0 24 24" fill="none"
+								 stroke="currentColor" stroke-width="1.5">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									  d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"></path>
+							</svg>
+						</div>
+						<h3 class="text-[18px] font-medium text-text-default tracking-[-0.5px]">Process</h3>
+						<p class="text-[14px] text-text-muted leading-[1.5]">Local feature extraction + encryption</p>
+					</div><!-- Verify -->
+					<div class="reveal card-lift relative border border-border-default rounded-[8px] p-6 flex flex-col gap-3">
+						<div class="flex items-center justify-between"><span
+								class="text-[12px] font-medium text-text-muted uppercase tracking-wider">Step 3</span>
+							<svg class="size-[20px] text-text-active" viewBox="0 0 24 24" fill="none"
+								 stroke="currentColor" stroke-width="1.5">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									  d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path>
+							</svg>
+						</div>
+						<h3 class="text-[18px] font-medium text-text-default tracking-[-0.5px]">Verify</h3>
+						<p class="text-[14px] text-text-muted leading-[1.5]">Identity + liveness confirmed in real
+							time</p></div><!-- Output -->
+					<div class="reveal card-lift relative border border-border-default rounded-[8px] p-6 flex flex-col gap-3">
+						<div class="flex items-center justify-between"><span
+								class="text-[12px] font-medium text-text-muted uppercase tracking-wider">Step 4</span>
+							<svg class="size-[20px] text-text-active" viewBox="0 0 24 24" fill="none"
+								 stroke="currentColor" stroke-width="1.5">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									  d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path>
+							</svg>
+						</div>
+						<h3 class="text-[18px] font-medium text-text-default tracking-[-0.5px]">Output</h3>
+						<p class="text-[14px] text-text-muted leading-[1.5]">Instant match/no-match decision</p></div>
+				</div>
+			</div>
+		</div>
+	</section><!-- ==================== 004 - COMPARISON TO OTHER BIOMETRICS ==================== -->
+	<section class="bg-[#f4f6fb] px-4 py-12 lg:py-16">
+		<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-8 lg:gap-16">
+			<div class="reveal flex flex-row items-start gap-[16px]"><span
+					class="inline-flex items-center justify-center size-[48px] rounded-full bg-very-black text-white text-[14px] font-medium shrink-0">
+004
+</span>
+				<h2 class="text-[28px] lg:text-[40px] font-medium text-text-default tracking-[-1.6px] leading-[1.1]">
+					VeryAI vs Face ID
+				</h2></div>
+			<div class="reveal flex flex-col gap-6 w-full">
+				<div class="overflow-x-auto w-full bg-white rounded-[12px] border border-border-default/60">
+					<table class="w-full text-left border-collapse">
+						<thead>
+						<tr class="border-b border-border-default/60">
+							<th class="py-4 pl-5 pr-4 text-[12px] font-semibold text-text-muted uppercase tracking-[1px]">
+								System
+							</th>
+							<th class="py-4 pr-4 text-[12px] font-semibold text-text-muted uppercase tracking-[1px]">
+								FAR
+							</th>
+							<th class="py-4 pr-4 text-[12px] font-semibold text-text-muted uppercase tracking-[1px]">
+								FRR
+							</th>
+							<th class="py-4 pr-4 text-[12px] font-semibold text-text-muted uppercase tracking-[1px]">
+								Hardware
+							</th>
+							<th class="py-4 pr-5 text-[12px] font-semibold text-text-muted uppercase tracking-[1px]">
+								Notes
+							</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr class="border-b border-border-default/40 bg-bg-brand/[0.04]">
+							<td class="py-4 pl-5 pr-4">
+								<div class="flex items-center gap-[8px]"><img
+										src="https://assets.very.org/icons/default/icon.svg" alt="Very"
+										class="size-[16px]"><span class="text-[14px] font-semibold text-text-default">VeryAI</span>
+								</div>
+							</td>
+							<td class="py-4 pr-4 text-[14px] font-medium text-text-default">1&times;10<sup>-7</sup></td>
+							<td class="py-4 pr-4 text-[14px] font-medium text-text-default">1.5&times;10<sup>-2</sup>
+							</td>
+							<td class="py-4 pr-4"><span
+									class="inline-flex items-center h-[24px] px-[10px] rounded-full bg-green-50 text-[12px] font-medium text-green-700">None</span>
+							</td>
+							<td class="py-4 pr-5 text-[13px] font-medium text-bg-brand">Software-only, 10x stronger</td>
+						</tr>
+						<tr>
+							<td class="py-4 pl-5 pr-4 text-[14px] font-medium text-text-muted">Apple Face ID</td>
+							<td class="py-4 pr-4 text-[14px] text-text-muted">~1&times;10<sup>-6</sup></td>
+							<td class="py-4 pr-4 text-[14px] text-text-muted">n/a</td>
+							<td class="py-4 pr-4"><span
+									class="inline-flex items-center h-[24px] px-[10px] rounded-full bg-amber-50 text-[12px] font-medium text-amber-700">IR Camera</span>
+							</td>
+							<td class="py-4 pr-5 text-[13px] text-text-muted">Hardware-dependent, spoofable</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="text-[16px] lg:text-[18px] text-text-muted leading-[1.6]">
+					VeryAI outperforms Apple Face ID by a factor of 10&times; while requiring no hardware beyond a
+					standard camera.
+				</p></div>
+		</div>
+	</section><!-- ==================== 005 - SCALING TO A GLOBAL POPULATION ==================== -->
+	<section class="bg-bg-default px-4 py-12 lg:py-16 border-t border-border-default">
+		<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-8 lg:gap-16">
+			<div class="reveal flex flex-row items-start gap-[16px]"><span
+					class="inline-flex items-center justify-center size-[48px] rounded-full bg-very-black text-white text-[14px] font-medium shrink-0">
+005
+</span>
+				<h2 class="text-[28px] lg:text-[40px] font-medium text-text-default tracking-[-1.6px] leading-[1.1]">
+					Scaling to a global population (~8.1B)
+				</h2></div>
+			<div class="flex flex-col gap-6 w-full"><p
+					class="reveal text-[16px] lg:text-[18px] text-text-muted leading-[1.6]">
+				To guarantee uniqueness at a global scale, FAR must be lower than 1/8.1B (~1.2&times;10<sup>-10</sup>).
+			</p>
+				<div class="reveal-stagger grid grid-cols-2 lg:grid-cols-4 gap-4">
+					<div class="reveal bg-very-black rounded-[12px] p-6 flex flex-col gap-3"><span
+							class="text-[36px] lg:text-[48px] font-medium text-white tracking-[-2px] leading-none">5</span><span
+							class="text-[13px] text-white/50 leading-[1.4]">Scans per palm</span></div>
+					<div class="reveal bg-very-black rounded-[12px] p-6 flex flex-col gap-3"><span
+							class="text-[36px] lg:text-[48px] font-medium text-white tracking-[-2px] leading-none">Dual</span><span
+							class="text-[13px] text-white/50 leading-[1.4]">Palm Enrollment (left + right)</span></div>
+					<div class="reveal bg-very-black rounded-[12px] p-6 flex flex-col gap-3"><span
+							class="text-[22px] lg:text-[28px] font-medium text-white tracking-[-1px] leading-none">2.5&times;10<sup>-14</sup></span><span
+							class="text-[13px] text-white/50 leading-[1.4]">Combined FAR</span></div>
+					<div class="reveal bg-very-black rounded-[12px] p-6 flex flex-col gap-3"><span
+							class="text-[22px] lg:text-[28px] font-medium text-white tracking-[-1px] leading-none">1&times;10<sup>-9</sup></span><span
+							class="text-[13px] text-white/50 leading-[1.4]">Combined FRR</span></div>
+				</div>
+			</div>
+		</div>
+	</section><!-- ==================== 006 - VERYAI VS. OTHER BIOMETRICS ==================== -->
+	<section class="bg-bg-default px-4 py-12 lg:py-16 border-t border-border-default">
+		<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-8 lg:gap-16">
+			<div class="reveal flex flex-row items-start gap-[16px]"><span
+					class="inline-flex items-center justify-center size-[48px] rounded-full bg-very-black text-white text-[14px] font-medium shrink-0">
+006
+</span>
+				<h2 class="text-[28px] lg:text-[40px] font-medium text-text-default tracking-[-1.6px] leading-[1.1]">
+					VeryAI vs Others
+				</h2></div>
+			<div class="reveal flex flex-col gap-6"><p class="text-[16px] lg:text-[18px] text-text-muted leading-[1.6]">
+				Unlike fingerprints that degrade and faces spoofed by deepfakes&mdash;or iris and DNA scans that are
+				accurate but costly&mdash;palmprints are distinct even among twins and never left behind. VeryAI turns
+				this advantage into a software-only, globally scalable solution that's 10&times; more accurate than face
+				or iris recognition.
+			</p><!-- Advantage summary -->
+				<div class="flex flex-col gap-[12px]">
+					<div class="flex items-center gap-[12px]">
+						<div class="size-[28px] rounded-full bg-bg-brand/10 flex items-center justify-center shrink-0">
+							<svg class="size-[14px] text-bg-brand" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+							</svg>
+						</div>
+						<span class="text-[15px] font-medium text-text-default">Distinct even among identical twins</span>
+					</div>
+					<div class="flex items-center gap-[12px]">
+						<div class="size-[28px] rounded-full bg-bg-brand/10 flex items-center justify-center shrink-0">
+							<svg class="size-[14px] text-bg-brand" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+							</svg>
+						</div>
+						<span class="text-[15px] font-medium text-text-default">Never left behind on surfaces</span>
+					</div>
+					<div class="flex items-center gap-[12px]">
+						<div class="size-[28px] rounded-full bg-bg-brand/10 flex items-center justify-center shrink-0">
+							<svg class="size-[14px] text-bg-brand" viewBox="0 0 24 24" fill="currentColor">
+								<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+							</svg>
+						</div>
+						<span class="text-[15px] font-medium text-text-default">10x more accurate than face or iris</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="bg-bg-inverted"> <!-- Main footer content -->
+	<div class="px-6 pt-16 pb-12 lg:px-12 lg:pt-20 lg:pb-16 max-w-[1200px] mx-auto">
+		<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8"> <!-- Left: Logo, tagline, social -->
+			<div class="lg:col-span-5">
+				<div class="mb-3"><img src="/images/veryai-logo-white.svg" alt="VeryAI" class="h-[28px] w-auto"></div>
+				<p class="text-[14px] text-white/50 leading-[1.7] max-w-[360px] mb-6">
+					Proprietary palm-print biometrics with AI & deepfake detection to verify people and media online.
+				</p> <!-- Social icons -->
+				<div class="flex items-center gap-2.5"><a href="https://x.com/veryai" target="_blank" rel="noopener"
+														  class="flex items-center justify-center size-[38px] rounded-[8px] border border-white/12 text-white/50 hover:text-white hover:border-white/25 hover:bg-white/5 transition-all duration-200 cursor-pointer"
+														  aria-label="X">
+					<svg class="size-[15px]" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+					</svg>
+				</a><a href="https://www.linkedin.com/company/very-ai" target="_blank" rel="noopener"
+					   class="flex items-center justify-center size-[38px] rounded-[8px] border border-white/12 text-white/50 hover:text-white hover:border-white/25 hover:bg-white/5 transition-all duration-200 cursor-pointer"
+					   aria-label="LinkedIn">
+					<svg class="size-[15px]" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+					</svg>
+				</a><a href="https://discord.gg/veryai" target="_blank" rel="noopener"
+					   class="flex items-center justify-center size-[38px] rounded-[8px] border border-white/12 text-white/50 hover:text-white hover:border-white/25 hover:bg-white/5 transition-all duration-200 cursor-pointer"
+					   aria-label="Discord">
+					<svg class="size-[17px]" viewBox="0 0 127.14 96.36" fill="currentColor">
+						<path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"></path>
+					</svg>
+				</a></div>
+				<a href="mailto:hello@very.org"
+				   class="inline-flex items-center gap-2 mt-4 text-[14px] text-white/50 hover:text-white transition-colors duration-200 cursor-pointer">
+					hello@very.org
+				</a></div> <!-- Middle: Link columns -->
+			<div class="lg:col-span-7 grid grid-cols-3 gap-8"> <!-- Resources -->
+				<div><h4 class="text-[12px] font-semibold text-white/50 uppercase tracking-[1.2px] mb-4">Resources</h4>
+					<div class="flex flex-col gap-2.5"><a href="/blog"
+														  class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Blog </a><a href="/jobs"
+									class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Careers </a><a href="/brand"
+									   class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Brand Kit </a><a href="/docs"
+										 class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Documentation </a><a href="https://clawkey.ai/" target="_blank" rel="noopener"
+											 class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Clawkey </a></div>
+				</div> <!-- Legal -->
+				<div><h4 class="text-[12px] font-semibold text-white/50 uppercase tracking-[1.2px] mb-4">Legal</h4>
+					<div class="flex flex-col gap-2.5"><a href="/legal/privacy"
+														  class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Privacy Policy </a><a href="/legal/terms"
+											  class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Terms of Service </a><a href="/legal/cookies"
+												class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Cookies </a><a href="/legal/dpa"
+									   class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Data Processing Agreement </a></div>
+				</div> <!-- Get Started -->
+				<div><h4 class="text-[12px] font-semibold text-white/50 uppercase tracking-[1.2px] mb-4">Get
+					Started</h4>
+					<div class="flex flex-col gap-2.5">
+						<button id="footer-join-btn"
+								class="inline-flex items-center gap-1.5 text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+							Sign up
+							<svg class="size-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								 stroke-width="2.5">
+								<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<a href="/docs/developers/introduction"
+						   class="inline-flex items-center gap-1.5 text-[14px] text-white/80 hover:text-white transition-colors duration-200 w-fit">
+							Integrate VeryAI
+							<svg class="size-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								 stroke-width="2.5">
+								<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</a></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- Bottom bar -->
+	<div class="border-t border-white/8">
+		<div class="max-w-[1200px] mx-auto px-6 py-5 lg:px-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+			<p class="text-[13px] text-[#5a6068]">&copy; 2026 Veros Inc. All rights reserved.</p></div>
+	</div>
+	<script type="module">const i = document.getElementById("footer-join-btn");
+    i?.addEventListener("click", () => {
+        const t = navigator.userAgent,
+            e = /iPhone|iPad|iPod/.test(t) || navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1,
+            n = /Android/.test(t);
+        if (e) {
+            window.location.href = "https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869";
+            return
+        }
+        if (n) {
+            window.location.href = "https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share";
+            return
+        }
+        const o = document.getElementById("join-modal");
+        o && (o.classList.remove("opacity-0", "pointer-events-none"), o.classList.add("opacity-100"), document.body.style.overflow = "hidden")
+    });</script>
+</footer> <!-- Vercel Web Analytics -->
+<script type="module">const s = new IntersectionObserver(e => {
+    e.forEach(r => {
+        r.isIntersecting && (r.target.classList.add("is-visible"), s.unobserve(r.target))
+    })
+}, {threshold: .1, rootMargin: "0px 0px -40px 0px"});
+document.querySelectorAll(".reveal").forEach(e => s.observe(e));</script>
+<!-- ==================== JOIN MODAL ==================== -->
+<div id="join-modal"
+	 class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200">
+	<!-- Backdrop -->
+	<div id="join-modal-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div> <!-- Card -->
+	<div class="relative bg-white rounded-[24px] shadow-[0_24px_80px_rgba(0,0,0,0.2)] w-full max-w-[440px] p-8 sm:p-10 flex flex-col items-center text-center">
+		<!-- Close button -->
+		<button id="join-modal-close"
+				class="absolute top-4 right-4 size-[36px] flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors text-gray-400 hover:text-gray-600">
+			<svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>
+		</button> <!-- VeryAI icon --> <img src="https://assets.very.org/icons/default/icon.svg" alt="VeryAI"
+											class="size-[48px] mb-6"> <!-- Title --> <h2
+			class="font-inter text-[28px] sm:text-[32px] font-semibold text-text-default tracking-[-1px] leading-[1.15] mb-2">
+		Get the VeryAI app
+	</h2>
+		<p class="text-[15px] text-text-muted leading-[1.6] mb-8">
+			Scan the QR code to download the app
+		</p> <!-- QR Code (desktop/hover devices only) -->
+		<div class="hidden sm:flex flex-col items-center gap-2 mb-6">
+			<div class="p-4 rounded-[16px] border border-gray-100 shadow-sm">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" shape-rendering="crispEdges" role="img"
+					 aria-label="QR code to download VeryAI app" class="size-[180px]">
+					<path stroke="#1a1d2e"
+						  d="M0 0.5h7m1 0h1m7 0h5m1 0h7M0 1.5h1m5 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m3 0h1m1 0h3m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m2 0h4m1 0h2m1 0h1m2 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m3 0h2m3 0h1m1 0h4m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m2 0h1m3 0h2m1 0h2m1 0h2m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h1m1 0h1m5 0h2m2 0h1M0 8.5h1m1 0h2m1 0h3m3 0h1m2 0h1m2 0h2m1 0h1m1 0h1m2 0h1m1 0h2M1 9.5h1m1 0h2m3 0h2m4 0h1m1 0h1m1 0h7m3 0h1M1 10.5h1m1 0h1m1 0h2m2 0h1m1 0h1m4 0h1m1 0h1m1 0h5m1 0h2M1 11.5h1m2 0h2m3 0h1m2 0h2m1 0h2m1 0h1m3 0h3m3 0h1M0 12.5h3m1 0h3m1 0h4m1 0h3m1 0h2m1 0h1m4 0h2M0 13.5h2m1 0h1m3 0h1m5 0h4m2 0h1m2 0h1m3 0h3M0 14.5h1m5 0h2m1 0h1m1 0h2m1 0h1m2 0h5m1 0h2m1 0h3M0 15.5h1m2 0h1m1 0h1m4 0h2m2 0h3m3 0h1m1 0h3m2 0h1M1 16.5h1m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m5 0h2m2 0h2m1 0h1M2 17.5h1m1 0h1m2 0h1m2 0h2m3 0h1m1 0h2m1 0h1m2 0h1m1 0h3M0 18.5h1m2 0h1m1 0h2m2 0h2m1 0h4m1 0h1m3 0h1m1 0h1m2 0h1M2 19.5h1m1 0h2m2 0h1m2 0h1m1 0h3m1 0h3m1 0h1m2 0h1m1 0h1M1 20.5h3m1 0h3m1 0h2m1 0h3m2 0h10M8 21.5h1m7 0h1m2 0h2m3 0h5M0 22.5h7m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1M0 23.5h1m5 0h1m1 0h2m1 0h4m1 0h1m3 0h1m3 0h2m2 0h1M0 24.5h1m1 0h3m1 0h1m2 0h1m1 0h1m5 0h1m2 0h5m1 0h3M0 25.5h1m1 0h3m1 0h1m1 0h1m1 0h4m1 0h3m3 0h1m1 0h3m2 0h1M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1M0 27.5h1m5 0h1m2 0h8m3 0h1m3 0h2m1 0h1M0 28.5h7m1 0h1m9 0h1m1 0h1m6 0h1"></path>
+				</svg>
+			</div>
+			<p class="text-[13px] text-text-muted">Scan with your phone to download</p></div>
+		<div class="hidden sm:flex items-center gap-3 w-full mb-6">
+			<div class="flex-1 h-px bg-gray-200"></div>
+			<span class="text-[13px] text-text-muted">or</span>
+			<div class="flex-1 h-px bg-gray-200"></div>
+		</div> <!-- App store links -->
+		<div class="flex flex-col sm:flex-row gap-3 w-full"><a
+				href="https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869" target="_blank" rel="noopener"
+				class="flex-1 hover:opacity-85 transition-opacity">
+			<svg viewBox="0 0 165 48" xmlns="http://www.w3.org/2000/svg" class="w-full h-[48px]" role="img"
+				 aria-label="Download on the App Store">
+				<rect width="165" height="48" rx="8" fill="#000"></rect>
+				<path d="M34.6 24.1c0-3.9 3.2-5.8 3.3-5.9-1.8-2.6-4.6-3-5.6-3-2.4-.2-4.6 1.4-5.8 1.4-1.2 0-3-.8-4.9-.8-2.5 0-4.9 1.5-6.2 3.7-2.6 4.6-.7 11.4 1.9 15.1 1.2 1.8 2.7 3.8 4.6 3.7 1.8-.1 2.5-1.2 4.8-1.2 2.2 0 2.9 1.2 4.8 1.1 2-.1 3.2-1.8 4.4-3.6 1.4-2 2-4 2-4.1-.1 0-3.3-1.3-3.3-5.4zm-3.1-9.9c1-1.2 1.7-2.9 1.5-4.6-1.5.1-3.2 1-4.3 2.2-.9 1.1-1.8 2.8-1.5 4.5 1.6.1 3.3-.8 4.3-2.1z"
+					  fill="#fff"></path>
+				<text x="50" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="10" fill="#fff" letter-spacing="0.3">Download on the
+				</text>
+				<text x="49" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">App Store
+				</text>
+			</svg>
+		</a> <a href="https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share" target="_blank"
+				rel="noopener" class="flex-1 hover:opacity-85 transition-opacity">
+			<svg viewBox="0 0 165 48" xmlns="http://www.w3.org/2000/svg" class="w-full h-[48px]" role="img"
+				 aria-label="Get it on Google Play">
+				<rect width="165" height="48" rx="8" fill="#000"></rect>
+				<path d="M14.5 10.3c-.3.3-.5.8-.5 1.4v24.6c0 .6.2 1.1.5 1.4l.1.1 13.8-13.8v-.3L14.5 10.3z"
+					  fill="#4285F4"></path>
+				<path d="M33 28.5l-4.6-4.6v-.3l4.6-4.6.1.1 5.4 3.1c1.6.9 1.6 2.3 0 3.2l-5.5 3.1z" fill="#FFBA00"></path>
+				<path d="M33.1 28.4L28.4 23.7 14.5 37.7c.5.5 1.3.6 2.2.1l16.4-9.4" fill="#EA4335"></path>
+				<path d="M33.1 19.1L16.7 9.7c-.9-.5-1.7-.4-2.2.1l13.9 13.9 4.7-4.6z" fill="#34A853"></path>
+				<text x="50" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="10" fill="#fff" letter-spacing="0.3">GET IT ON
+				</text>
+				<text x="49" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">Google Play
+				</text>
+			</svg>
+		</a></div>
+	</div>
+</div>
+<script type="module">const o = document.getElementById("join-modal"),
+    c = document.getElementById("join-modal-backdrop"), s = document.getElementById("join-modal-close");
+
+function a() {
+    o?.classList.remove("opacity-0", "pointer-events-none"), o?.classList.add("opacity-100"), document.body.style.overflow = "hidden"
+}
+
+function t() {
+    o?.classList.add("opacity-0", "pointer-events-none"), o?.classList.remove("opacity-100"), document.body.style.overflow = ""
+}
+
+c?.addEventListener("click", t);
+s?.addEventListener("click", t);
+document.addEventListener("keydown", e => {
+    e.key === "Escape" && t()
+});
+window.__openJoinModal = a;
+document.querySelectorAll(".join-cta").forEach(e => {
+    e.addEventListener("click", () => {
+        const n = navigator.userAgent,
+            i = /iPhone|iPad|iPod/.test(n) || navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1,
+            d = /Android/.test(n);
+        if (i) {
+            window.location.href = "https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869";
+            return
+        }
+        if (d) {
+            window.location.href = "https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share";
+            return
+        }
+        a()
+    })
+});</script>
+<script type="module">var v = () => {
+    window.va || (window.va = function (...i) {
+        window.vaq || (window.vaq = []), window.vaq.push(i)
+    })
+}, l = "@vercel/analytics", w = "2.0.0";
+
+function c() {
+    return typeof window < "u"
+}
+
+function u() {
+    try {
+        const e = "production"
+    } catch {
+    }
+    return "production"
+}
+
+function m(e = "auto") {
+    if (e === "auto") {
+        window.vam = u();
+        return
+    }
+    window.vam = e
+}
+
+function b() {
+    return (c() ? window.vam : u()) || "production"
+}
+
+function d() {
+    return b() === "development"
+}
+
+function h(e) {
+    return e.scriptSrc ? o(e.scriptSrc) : d() ? "https://va.vercel-scripts.com/v1/script.debug.js" : e.basePath ? o(`${e.basePath}/insights/script.js`) : "/_vercel/insights/script.js"
+}
+
+function y(e, i) {
+    var r;
+    let t = e;
+    if (i) try {
+        t = {...(r = JSON.parse(i)) == null ? void 0 : r.analytics, ...e}
+    } catch {
+    }
+    m(t.mode);
+    const n = {sdkn: l + (t.framework ? `/${t.framework}` : ""), sdkv: w};
+    return t.disableAutoTrack && (n.disableAutoTrack = "1"), t.viewEndpoint && (n.viewEndpoint = o(t.viewEndpoint)), t.eventEndpoint && (n.eventEndpoint = o(t.eventEndpoint)), t.sessionEndpoint && (n.sessionEndpoint = o(t.sessionEndpoint)), d() && t.debug === !1 && (n.debug = "false"), t.dsn && (n.dsn = t.dsn), t.endpoint ? n.endpoint = t.endpoint : t.basePath && (n.endpoint = o(`${t.basePath}/insights`)), {
+        beforeSend: t.beforeSend,
+        src: h(t),
+        dataset: n
+    }
+}
+
+function o(e) {
+    return e.startsWith("http://") || e.startsWith("https://") || e.startsWith("/") ? e : `/${e}`
+}
+
+function g(e = {debug: !0}, i) {
+    var r;
+    if (!c()) return;
+    const {beforeSend: t, src: n, dataset: f} = y(e, i);
+    if (v(), t && ((r = window.va) == null || r.call(window, "beforeSend", t)), document.head.querySelector(`script[src*="${n}"]`)) return;
+    const s = document.createElement("script");
+    s.src = n;
+    for (const [a, p] of Object.entries(f)) s.dataset[a] = p;
+    s.defer = !0, s.onerror = () => {
+        const a = d() ? "Please check if any ad blockers are enabled and try again." : "Be sure to enable Web Analytics for your project and deploy again. See https://vercel.com/docs/analytics/quickstart for more information.";
+        console.log(`[Vercel Web Analytics] Failed to load script from ${n}. ${a}`)
+    }, document.head.appendChild(s)
+}
+
+g();</script>
+</body>
+</html>

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		  content="VeryAI is the defence layer for the digital world. Prove who and what is real with palm biometrics, deepfake detection, and authenticated content — protecting people, platforms, and markets.">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://very.org/"><!-- Google Search Console verification --><!-- Favicon -->
+	<link rel="icon" type="image/svg+xml" href="images/favicon.ico">
+	<link rel="icon" type="image/x-icon" sizes="32x32 16x16" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png"><!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://very.org/">
+	<meta property="og:title" content="VeryAI — Prove who and what is real">
+	<meta property="og:description"
+		  content="VeryAI is the defence layer for the digital world. Prove who and what is real with palm biometrics, deepfake detection, and authenticated content — protecting people, platforms, and markets.">
+	<meta property="og:image" content="https://very.org/images/og-default.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="VeryAI">
+	<meta property="og:locale" content="en_US"><!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@veryai">
+	<meta name="twitter:creator" content="@veryai">
+	<meta name="twitter:title" content="VeryAI — Prove who and what is real">
+	<meta name="twitter:description"
+		  content="VeryAI is the defence layer for the digital world. Prove who and what is real with palm biometrics, deepfake detection, and authenticated content — protecting people, platforms, and markets.">
+	<meta name="twitter:image" content="https://very.org/images/og-default.jpg"><!-- JSON-LD Structured Data -->
+	<script type="application/ld+json">{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "VeryAI",
+		"url": "https://very.org",
+		"logo": "https://very.org/images/veryai-logo-white.svg",
+		"sameAs": [
+			"https://x.com/veryai",
+			"https://www.linkedin.com/company/very-ai",
+			"https://discord.gg/veryai"
+		],
+		"description": "VeryAI is the first-ever Proof of Reality — a defence layer for the digital world protecting people, platforms, and markets from AI-driven fraud, deepfakes, and synthetic identities.",
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"email": "support@very.org",
+			"contactType": "customer support"
+		}
+	}</script><!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+	<!-- Google Analytics --><title>VeryAI — Prove who and what is real</title><!-- Hotjar / Contentsquare -->
+	<script src="https://t.contentsquare.net/uxa/e885523bb9bbe.js" async></script>
+	<link rel="stylesheet" href="/_astro/api-reference.DrKsQ4Rz.css">
+	<style>#navbar-wrapper {
+		position: fixed;
+		left: 0;
+		right: 0
+	}
+	</style>
+</head>
+<body class="min-h-screen bg-bg-default text-text-default">
+<div id="navbar-wrapper" class="sticky top-0 z-50 pt-3 transition-[padding] duration-500 ease-out">
+	<nav id="navbar" class="border border-transparent transition-all duration-500 ease-out navbar-dark bg-transparent">
+		<div class="relative max-w-[1400px] mx-auto flex items-center justify-between px-6 h-[60px]"> <!-- Logo --> <a
+				href="/" class="flex items-center cursor-pointer"> <img src="/images/veryai-logo-white.svg" alt="VeryAI"
+																		class="nav-logo h-[28px] w-auto brightness-0 transition-all duration-300">
+		</a> <!-- Center nav links (visible on md+) -->
+			<div class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2"><a href="/privacy"
+																								 class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Privacy </a><a href="/technology"
+							   class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Technology </a><a href="/docs"
+								  class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Developers </a><a href="/blog"
+								  class="nav-link text-[15px] font-medium text-text-muted hover:text-text-default transition-colors cursor-pointer">
+				Blog </a></div> <!-- Right side icons -->
+			<div class="flex items-center gap-2"> <!-- X / Twitter --> <a href="https://x.com/veryai" target="_blank"
+																		  rel="noopener"
+																		  class="nav-social hidden sm:flex items-center justify-center size-[40px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-all duration-300 cursor-pointer"
+																		  aria-label="X (Twitter)">
+				<svg class="size-[16px]" viewBox="0 0 24 24" fill="currentColor">
+					<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+				</svg>
+			</a> <!-- Sign up -->
+				<button id="nav-join-btn"
+						class="nav-social hidden sm:flex items-center gap-1 h-[40px] pl-4 pr-3 rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-all duration-300 cursor-pointer font-semibold text-[14px] text-black whitespace-nowrap">
+					Sign up
+					<svg class="size-[16px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+						<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</button> <!-- Hamburger / Menu button (mobile only) -->
+				<button id="menu-btn"
+						class="md:hidden flex items-center justify-center size-[40px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-all duration-300 cursor-pointer"
+						aria-label="Open menu" aria-expanded="false">
+					<svg class="size-[18px] menu-open" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						 stroke-width="2">
+						<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"></path>
+					</svg>
+					<svg class="size-[18px] menu-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+						 stroke-width="2">
+						<path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</nav> <!-- Floating dropdown menu -->
+	<div id="nav-dropdown"
+		 class="hidden absolute right-4 sm:right-6 top-[calc(100%-4px)] w-[200px] bg-white rounded-[12px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-gray-100 overflow-hidden opacity-0 translate-y-[-8px] transition-all duration-200 ease-out z-50">
+		<div class="flex flex-col py-2"><a href="/privacy"
+										   class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Privacy </a><a href="/technology"
+						   class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Technology </a><a href="/docs"
+							  class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Developers </a><a href="/blog"
+							  class="text-[15px] font-medium text-text-muted hover:text-text-default hover:bg-gray-50 px-4 py-2.5 transition-colors cursor-pointer">
+			Blog </a></div> <!-- Social icons for mobile only -->
+		<div class="sm:hidden flex items-center gap-2 px-4 py-3 border-t border-gray-100"><a href="https://x.com/veryai"
+																							 target="_blank"
+																							 rel="noopener"
+																							 class="flex items-center justify-center size-[36px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors cursor-pointer"
+																							 aria-label="X (Twitter)">
+			<svg class="size-[14px]" viewBox="0 0 24 24" fill="currentColor">
+				<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+			</svg>
+		</a> <a href="https://download.very.org" target="_blank" rel="noopener"
+				class="flex items-center justify-center size-[36px] rounded-full border border-gray-200 bg-white hover:bg-gray-50 transition-colors cursor-pointer"
+				aria-label="Download App">
+			<svg class="size-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" stroke-linecap="round"
+					  stroke-linejoin="round"></path>
+			</svg>
+		</a></div>
+	</div>
+</div> <!-- Click-outside overlay to close menu -->
+<div id="nav-overlay" class="hidden fixed inset-0 z-40"></div>
+<script type="module">const d = document.getElementById("navbar-wrapper"), e = document.getElementById("navbar"),
+    n = document.getElementById("menu-btn"), t = document.getElementById("nav-dropdown"),
+    o = document.getElementById("nav-overlay"), v = n?.querySelector(".menu-open"), m = n?.querySelector(".menu-close"),
+    c = e?.classList.contains("navbar-dark"), l = e?.classList.contains("navbar-transparent");
+let s = !1;
+
+function i(a) {
+    s = a ?? !s, n?.setAttribute("aria-expanded", String(s)), v?.classList.toggle("hidden", s), m?.classList.toggle("hidden", !s), s ? (t?.classList.remove("hidden"), o?.classList.remove("hidden"), requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            t?.classList.remove("opacity-0", "translate-y-[-8px]"), t?.classList.add("opacity-100", "translate-y-0")
+        })
+    })) : (t?.classList.add("opacity-0", "translate-y-[-8px]"), t?.classList.remove("opacity-100", "translate-y-0"), o?.classList.add("hidden"), setTimeout(() => t?.classList.add("hidden"), 200))
+}
+
+n?.addEventListener("click", () => i());
+o?.addEventListener("click", () => i(!1));
+const L = document.getElementById("nav-join-btn");
+L?.addEventListener("click", () => {
+    const a = navigator.userAgent,
+        b = /iPhone|iPad|iPod/.test(a) || navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1,
+        u = /Android/.test(a);
+    if (b) {
+        window.location.href = "https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869";
+        return
+    }
+    if (u) {
+        window.location.href = "https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share";
+        return
+    }
+    window.__openJoinModal?.()
+});
+t?.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => i(!1))
+});
+let r = !1;
+const g = 40;
+
+function p() {
+    const a = window.scrollY > g;
+    a !== r && (r = a, r ? (d?.classList.add("px-4"), e?.classList.add("rounded-[16px]", "shadow-[0_4px_24px_rgba(0,0,0,0.06)]", "border-white/40"), e?.classList.remove("border-b-white/30"), c ? (e?.classList.remove("navbar-dark", "bg-transparent"), e?.classList.add("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150")) : l && (e?.classList.remove("navbar-transparent", "bg-transparent"), e?.classList.add("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150"))) : (d?.classList.remove("px-4"), e?.classList.remove("rounded-[16px]", "shadow-[0_4px_24px_rgba(0,0,0,0.06)]", "border-white/40"), c ? (e?.classList.add("navbar-dark", "bg-transparent"), e?.classList.remove("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150", "border-b-white/30")) : l ? (e?.classList.add("navbar-transparent", "bg-transparent"), e?.classList.remove("bg-white/90", "backdrop-blur-xl", "backdrop-saturate-150", "border-b-white/30")) : e?.classList.add("border-b-white/30")))
+}
+
+window.addEventListener("scroll", p, {passive: !0});
+p();</script>
+<main><!-- ==================== HERO ==================== -->
+	<section class="relative bg-black overflow-hidden"><!-- Background Layer 1: Blurred gradient -->
+		<div class="absolute inset-0 opacity-40 flex items-center justify-center"><img
+				src="/images/hero-bg-gradient-v2.webp" alt="" class="w-full h-full object-cover blur-[97px]"
+				loading="eager" fetchpriority="high"></div><!-- Background Layer 2: Saturation texture -->
+		<div class="absolute inset-0 mix-blend-saturation" style="left:-115px;top:-277px;width:calc(100% + 230px);"><img
+				src="/images/hero-texture-v2.webp" alt="" class="w-full h-full object-cover" loading="eager"></div>
+		<!-- Background Layer 3: Luminosity overlay -->
+		<div class="absolute inset-0 mix-blend-luminosity"><img src="/images/hero-overlay-v2.webp" alt=""
+																class="w-full h-full object-cover" loading="eager">
+		</div><!-- Hero Content -->
+		<div class="relative z-10 min-h-screen flex items-center">
+			<div class="w-full max-w-[1307px] mx-auto px-6 lg:px-8 py-[100px]">
+				<div class="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-[80px] xl:gap-[120px]">
+					<!-- Left: Large heading -->
+					<div class="lg:max-w-[60%] xl:max-w-[720px] lg:shrink-0"><h1 class="hero-heading">
+						Prove <span class="underline underline-offset-[6px] decoration-[3px]">who</span> and <span
+							class="underline underline-offset-[6px] decoration-[3px]">what</span> is real.
+					</h1></div><!-- Right: Description + CTA -->
+					<div class="flex-1 flex flex-col gap-6">
+						<div class="flex flex-col gap-4"><p
+								class="font-inter text-[13px] sm:text-[14px] font-semibold text-white/50 uppercase tracking-[1.5px]">
+							Introducing Proof of Reality
+						</p>
+							<p class="font-inter text-[16px] sm:text-[18px] lg:text-[20px] text-white/90 leading-[1.6] max-w-[420px]">
+								Proprietary palm-print biometrics with AI & deepfake detection to verify people and
+								media online.
+							</p></div>
+						<div class="flex flex-wrap gap-3">
+							<button class="join-cta hero-cta inline-flex items-center gap-1 bg-white text-black font-inter font-semibold text-[15px] h-[52px] pl-6 pr-4 rounded-full">
+								Sign up
+								<svg class="size-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+									 stroke-width="2.5">
+									<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</button>
+							<a href="/docs/developers/introduction"
+							   class="inline-flex items-center gap-1 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-inter font-semibold text-[15px] h-[52px] pl-6 pr-4 rounded-full transition-colors">
+								Integrate VeryAI
+								<svg class="size-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+									 stroke-width="2.5">
+									<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- ==================== STEPS (text left, sticky image right) ==================== -->
+	<section class="bg-white lg:bg-[linear-gradient(to_right,white_50%,#f3f4f6_50%)]">
+		<div class="flex flex-col lg:flex-row lg:max-w-[1440px] lg:mx-auto lg:items-center">
+			<!-- Left: all steps stacked -->
+			<div class="flex flex-col lg:w-1/2 py-16 lg:py-20 px-6 lg:px-16 xl:px-24 lg:justify-center"><!-- Step 1 -->
+				<div class="step-item reveal py-8 lg:py-12 border-b border-gray-100 cursor-pointer" data-step="0">
+					<div>
+						<div class="flex items-start justify-between mb-3"><h2
+								class="text-[26px] lg:text-[36px] font-medium text-text-default tracking-[-1.4px] leading-[1.1] step-title transition-colors duration-500">
+							Scan your palm
+						</h2><span class="text-[13px] text-text-muted/50 font-medium shrink-0 ml-4">001</span></div>
+						<p class="text-[15px] text-text-muted leading-[1.7] max-w-[420px] step-desc transition-colors duration-500">
+							A quick, private scan creates an unforgeable anchor for your digital identity. No raw
+							biometrics are ever stored.
+						</p><!-- Mobile image -->
+						<div class="lg:hidden mt-6 flex flex-col items-center gap-5">
+							<div class="relative w-full max-w-[280px]"
+								 style="filter: drop-shadow(0 12px 32px rgba(0,0,0,0.18));"><img
+									src="/images/palmscamtouch.webp" alt="Scan your palm" class="w-full rounded-[22px]"
+									loading="lazy"><!-- Dot 1 -->
+								<div class="absolute" style="left:61%;top:55%;transform:translate(-50%,-50%);">
+									<div class="relative size-[30px]">
+										<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse"></div>
+										<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse-delayed"></div>
+										<div class="relative size-full rounded-full bg-[#68C905]/70 flex items-center justify-center z-10">
+											<div class="size-[58%] rounded-full bg-black"></div>
+										</div>
+									</div>
+								</div><!-- Dot 2 -->
+								<div class="absolute" style="left:58%;top:52%;transform:translate(-50%,-50%);">
+									<div class="relative size-[30px]">
+										<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse"></div>
+										<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse-delayed"></div>
+										<div class="relative size-full rounded-full bg-[#68C905]/70 flex items-center justify-center z-10">
+											<div class="size-[58%] rounded-full bg-black"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-center"><h3
+									class="text-[20px] font-semibold text-text-default tracking-[-0.5px] leading-tight mb-1">
+								Move fingers</h3>
+								<p class="text-[14px] text-text-muted leading-snug">Bring the dots together by moving
+									your fingers.</p></div>
+						</div>
+					</div>
+				</div><!-- Step 2 -->
+				<div class="step-item reveal py-8 lg:py-12 border-b border-gray-100 cursor-pointer" data-step="1">
+					<div class="flex items-start justify-between mb-3"><h2
+							class="text-[26px] lg:text-[36px] font-medium text-text-default tracking-[-1.4px] leading-[1.1] step-title transition-colors duration-500">
+						Verify your content
+					</h2><span class="text-[13px] text-text-muted/50 font-medium shrink-0 ml-4">002</span></div>
+					<p class="text-[15px] text-text-muted leading-[1.7] max-w-[420px] step-desc transition-colors duration-500">
+						Cryptographically sign images, videos, or messages to prove they came from a real, verified
+						human.
+					</p><!-- Mobile image: Two overlapping verified content cards -->
+					<div class="lg:hidden mt-6 flex justify-center">
+						<div class="relative w-full max-w-[300px] h-[370px]"
+							 style="filter: drop-shadow(0 12px 24px rgba(0,0,0,0.22));">
+							<!-- Back card: grayscale, faded, rotated -->
+							<div class="absolute top-[5px] left-[-15px] w-[78%] rounded-[16px] overflow-hidden rotate-[16deg] origin-bottom-left opacity-55 grayscale">
+								<img src="/images/step-trust-1.webp" alt="Verified content"
+									 class="w-full h-[300px] object-cover" loading="lazy"></div>
+							<!-- Front card: full color -->
+							<div class="absolute top-[25px] left-[35px] w-[78%] rounded-[16px] overflow-hidden rotate-[9deg] origin-bottom-left">
+								<img src="/images/step-trust-1.webp" alt="Verified content"
+									 class="w-full h-[300px] object-cover object-[center_30%]" loading="lazy">
+								<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-white/80 backdrop-blur-md text-[#1c2533] px-3 py-1.5 rounded-full whitespace-nowrap shadow-[0_2px_12px_rgba(0,0,0,0.08)]">
+									<span class="text-[12px] font-medium">Verified</span><img
+										src="https://assets.very.org/icons/default/icon.svg" alt="Very"
+										class="size-[13px]"></div>
+							</div>
+						</div>
+					</div>
+				</div><!-- Step 3 -->
+				<div class="step-item reveal py-8 lg:py-12 cursor-pointer" data-step="2">
+					<div class="flex items-start justify-between mb-3"><h2
+							class="text-[26px] lg:text-[36px] font-medium text-text-default tracking-[-1.4px] leading-[1.1] step-title transition-colors duration-500">
+						Interact with trust
+					</h2><span class="text-[13px] text-text-muted/50 font-medium shrink-0 ml-4">003</span></div>
+					<p class="text-[15px] text-text-muted leading-[1.7] max-w-[420px] step-desc transition-colors duration-500">
+						Engage in secure communities and transactions, fully protected from deepfakes and AI-driven
+						fraud.
+					</p><!-- Mobile image: Transaction complete card -->
+					<div class="lg:hidden mt-6 flex justify-center">
+						<div class="relative w-full max-w-[320px]"
+							 style="filter: drop-shadow(0 12px 24px rgba(0,0,0,0.18));">
+							<!-- Back card layer 2 (deepest): same height as front, shifted down 16px → peeks 16px below -->
+							<div class="absolute inset-x-5 top-4 -bottom-4 bg-white rounded-[20px] opacity-25"></div>
+							<!-- Back card layer 1: shifted down 8px → peeks 8px below -->
+							<div class="absolute inset-x-2 top-2 -bottom-2 bg-white rounded-[20px] opacity-60"></div>
+							<!-- Front card -->
+							<div class="relative z-10 w-full bg-white rounded-[20px] shadow-[0_16px_56px_rgba(0,0,0,0.12)] p-5 flex items-center gap-4">
+								<div class="shrink-0 size-[72px] rounded-[14px] bg-gray-100 overflow-hidden"><img
+										src="/images/step-icon.webp" alt="Product" class="w-full h-full object-cover"
+										loading="lazy"></div>
+								<div class="space-y-1.5">
+									<div class="text-[18px] font-semibold text-text-default leading-tight tracking-[-0.5px]">
+										Transaction complete!
+									</div>
+									<div class="text-[13px] text-text-muted leading-snug">Your transaction of $51.32 has
+										been sent
+									</div>
+									<div class="flex items-center gap-1.5 border border-gray-200 rounded-[6px] px-2.5 py-1.5 w-fit">
+										<span class="text-[11px] text-text-muted font-medium">Powered by VeryAI</span><img
+											src="https://assets.very.org/icons/default/icon.svg" alt="Very"
+											class="size-[13px]"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- Right: fixed-height image panel -->
+			<div class="hidden lg:flex lg:w-1/2 lg:items-center lg:justify-center lg:py-20">
+				<div class="relative w-full h-[560px] flex items-center justify-center" id="steps-image-container">
+					<!-- Step 1: Scan Your Palm — image + caption -->
+					<div class="step-image absolute inset-0 flex items-center justify-center transition-opacity duration-500"
+						 data-step-img="0">
+						<div class="w-[70%] max-w-[400px]">
+							<div class="rounded-[22px]" style="filter: drop-shadow(0 24px 48px rgba(0,0,0,0.22));">
+								<div class="relative rounded-[22px] overflow-hidden"><img
+										src="/images/palmscamtouch.webp" alt="Scan your palm"
+										class="w-full object-cover" loading="lazy">
+									<!-- Dot 1: index finger base area -->
+									<div class="absolute" style="left:61%;top:55%;transform:translate(-50%,-50%);">
+										<div class="relative size-[40px]">
+											<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse"></div>
+											<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse-delayed"></div>
+											<div class="relative size-full rounded-full bg-[#68C905]/70 flex items-center justify-center z-10">
+												<div class="size-[58%] rounded-full bg-black"></div>
+											</div>
+										</div>
+									</div><!-- Dot 2: thumb/center palm -->
+									<div class="absolute" style="left:58%;top:52%;transform:translate(-50%,-50%);">
+										<div class="relative size-[40px]">
+											<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse"></div>
+											<div class="absolute inset-0 rounded-full bg-[#68C905] marker-pulse-delayed"></div>
+											<div class="relative size-full rounded-full bg-[#68C905]/70 flex items-center justify-center z-10">
+												<div class="size-[58%] rounded-full bg-black"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mt-6 text-center"><h3
+									class="text-[26px] font-semibold text-text-default tracking-[-0.5px] leading-tight mb-1">
+								Move fingers</h3>
+								<p class="text-[15px] text-text-muted leading-snug">Bring the dots together by<br>moving
+									your fingers.</p></div>
+						</div>
+					</div><!-- Step 2: Verify Your Content — two overlapping photo cards -->
+					<div class="step-image absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500"
+						 data-step-img="1">
+						<div class="-mt-28 relative z-10 w-[70%] max-w-[500px] h-[440px]"
+							 style="filter: drop-shadow(0 24px 48px rgba(0,0,0,0.22));">
+							<!-- Back card: grayscale, faded, rotated strongly clockwise, upper-left -->
+							<div class="step2-card-back absolute top-[10px] left-[-30px] w-[78%] rounded-[16px] overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.10)] rotate-[16deg] origin-bottom-left opacity-55 grayscale transition-[transform,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-3 hover:opacity-100">
+								<img src="/images/step-trust-1.webp" alt="Verified content"
+									 class="w-full h-[420px] object-cover"></div>
+							<!-- Front card: full color, dominant, moderate clockwise rotation -->
+							<div class="step2-card-front absolute top-[50px] left-[70px] w-[78%] rounded-[16px] overflow-hidden shadow-[0_16px_56px_rgba(0,0,0,0.22)] rotate-[9deg] origin-bottom-left transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-3">
+								<img src="/images/step-trust-1.webp" alt="Verified content"
+									 class="w-full h-[420px] object-cover object-[center_30%]">
+								<!-- Verified badge: light pill, dark text, VeryAI icon -->
+								<div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-white/80 backdrop-blur-md text-[#1c2533] px-4 py-2 rounded-full whitespace-nowrap shadow-[0_2px_12px_rgba(0,0,0,0.08)]">
+									<span class="text-[13px] font-medium">Verified</span><img
+										src="https://assets.very.org/icons/default/icon.svg" alt="Very"
+										class="size-[15px]"></div>
+							</div>
+						</div>
+					</div><!-- Step 3: Interact with Trust — transaction complete card -->
+					<div class="step-image absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-500"
+						 data-step-img="2">
+						<div class="relative w-[85%] max-w-[540px]"
+							 style="filter: drop-shadow(0 24px 48px rgba(0,0,0,0.22));">
+							<!-- Back card layer 2 (deepest) -->
+							<div class="step3-card-1 absolute inset-x-6 -bottom-8 h-[90%] bg-white rounded-[20px] opacity-20 shadow-[0_4px_16px_rgba(0,0,0,0.06)]"></div>
+							<!-- Back card layer 1 -->
+							<div class="step3-card-2 absolute inset-x-3 -bottom-4 h-[95%] bg-white rounded-[20px] opacity-60 shadow-[0_4px_20px_rgba(0,0,0,0.07)]"></div>
+							<!-- Front card -->
+							<div class="step3-card-3 relative z-10 w-full bg-white rounded-[20px] shadow-[0_16px_56px_rgba(0,0,0,0.12)] p-6 flex items-center gap-5">
+								<!-- Handbag thumbnail: full-bleed cover -->
+								<div class="shrink-0 size-[88px] rounded-[16px] bg-gray-100 overflow-hidden"><img
+										src="/images/step-icon.webp" alt="Product" class="w-full h-full object-cover">
+								</div>
+								<div class="space-y-1.5">
+									<div class="text-[26px] font-semibold text-text-default leading-tight tracking-[-0.5px]">
+										Transaction complete!
+									</div>
+									<div class="text-[15px] text-text-muted leading-snug">Your transaction of $51.32 has
+										been sent
+									</div>
+									<div class="flex items-center gap-1.5 border border-gray-200 rounded-[6px] px-2.5 py-1.5 w-fit mt-1">
+										<span class="text-[12px] text-text-muted font-medium">Powered by VeryAI</span><img
+											src="https://assets.very.org/icons/default/icon.svg" alt="Very"
+											class="size-[14px]"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="module">const l = document.querySelectorAll(".step-item"),
+        i = document.querySelectorAll(".step-image");
+    let n = -1;
+    const d = () => window.matchMedia("(min-width: 1024px)").matches;
+
+    function r(c) {
+        c !== n && (n = c, l.forEach((e, o) => {
+            const s = e.querySelector(".step-title"), t = e.querySelector(".step-desc"), a = o === c || !d();
+            s && (s.classList.toggle("text-text-muted/40", !a), s.classList.toggle("text-text-default", a)), t && (t.classList.toggle("text-text-muted/60", !a), t.classList.toggle("text-text-muted", a))
+        }), i.forEach((e, o) => {
+            o === c ? (e.classList.remove("opacity-0"), e.classList.add("opacity-100"), o === 1 && ["step2-card-back", "step2-card-front"].forEach(s => {
+                const t = e.querySelector(`.${s}`);
+                t && (t.style.animation = "none", t.getBoundingClientRect(), t.style.animation = "")
+            }), o === 2 && ["step3-card-1", "step3-card-2", "step3-card-3"].forEach(s => {
+                const t = e.querySelector(`.${s}`);
+                t && (t.style.animation = "none", t.getBoundingClientRect(), t.style.animation = "")
+            })) : (e.classList.add("opacity-0"), e.classList.remove("opacity-100"))
+        }))
+    }
+
+    l.forEach((c, e) => {
+        c.addEventListener("mouseenter", () => r(e))
+    });
+    r(0);</script><!-- ==================== TRUSTED BY ==================== -->
+	<section class="bg-bg-inverted py-12 lg:py-20 overflow-hidden">
+		<div class="max-w-[900px] mx-auto px-6">
+			<div class="reveal text-center mb-12"><p class="text-[32px] font-medium text-white tracking-[-0.5px]">
+				Trusted by the best</p></div>
+		</div><!-- Full-bleed carousel with edge fades -->
+		<div class="reveal relative"><!-- Left/right gradient fades -->
+			<div class="absolute left-0 top-0 bottom-0 w-[80px] lg:w-[160px] bg-gradient-to-r from-bg-inverted to-transparent z-10 pointer-events-none"></div>
+			<div class="absolute right-0 top-0 bottom-0 w-[80px] lg:w-[160px] bg-gradient-to-l from-bg-inverted to-transparent z-10 pointer-events-none"></div>
+			<div class="marquee-container">
+				<div class="marquee-track items-center"><img src="/images/logos/galxe.svg" alt="Galxe"
+															 class="brightness-0 invert opacity-70"><img
+						src="/images/logos/clique.svg" alt="Clique" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/talus.svg" alt="Talus" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/polychain.svg" alt="Polychain Capital"
+						class="brightness-0 invert opacity-70 h-[52px] w-auto"><img src="/images/logos/berggruen.svg"
+																					alt="Berggruen Institute"
+																					class="brightness-0 invert opacity-70"><img
+						src="/images/logos/anagram.svg" alt="Anagram" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/solana.svg" alt="Solana" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/mexc.svg" alt="MEXC" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/crossmint.svg" alt="Crossmint" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/colosseum.svg" alt="Colosseum" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/galxe.svg" alt="Galxe" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/clique.svg" alt="Clique" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/talus.svg" alt="Talus" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/polychain.svg" alt="Polychain Capital"
+						class="brightness-0 invert opacity-70 h-[52px] w-auto"><img src="/images/logos/berggruen.svg"
+																					alt="Berggruen Institute"
+																					class="brightness-0 invert opacity-70"><img
+						src="/images/logos/anagram.svg" alt="Anagram" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/solana.svg" alt="Solana" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/mexc.svg" alt="MEXC" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/crossmint.svg" alt="Crossmint" class="brightness-0 invert opacity-70"><img
+						src="/images/logos/colosseum.svg" alt="Colosseum" class="brightness-0 invert opacity-70"></div>
+			</div>
+		</div>
+	</section><!-- ==================== BUILT FOR THE NEW INTERNET ==================== -->
+	<section class="bg-bg-inverted px-6 py-12 lg:px-12 lg:py-16">
+		<div class="max-w-[1200px] mx-auto">
+			<div class="reveal flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-10">
+				<div><h2 class="text-[32px] lg:text-[48px] font-medium text-white tracking-[-1.6px] leading-[1.1] mb-3">
+					Built for the new internet.
+				</h2>
+					<p class="text-[14px] lg:text-[16px] text-white/50 leading-[1.6] max-w-[600px]">
+						VeryAI provides the critical infrastructure to protect any platform from the risks of AI-driven
+						fraud and manipulated content.
+					</p></div>
+				<a href="https://apps.apple.com/us/app/veros-identity-verification/id6746761869" target="_blank"
+				   class="shrink-0 flex items-center gap-2 h-[44px] px-6 rounded-full border border-white/20 text-[14px] font-medium text-white hover:bg-white/5 transition-colors cursor-pointer whitespace-nowrap">
+					Join Now
+					<svg class="size-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+						<path d="M7 17L17 7M17 7H7M17 7v10" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+				</a></div><!-- Feature Cards -->
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-4 reveal-stagger"><!-- Sybil-Proof Onboarding -->
+				<div class="reveal relative rounded-[8px] overflow-hidden h-[320px] lg:h-[400px]"><img
+						src="/images/card-devs.webp" alt="Sybil-Proof Onboarding"
+						class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+					<div class="absolute top-4 right-4 bg-white rounded-[6px] size-[40px] flex items-center justify-center">
+						<svg class="size-[20px]" viewBox="0 0 24 24" fill="#1c2125">
+							<path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+						</svg>
+					</div>
+					<div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8"><h3
+							class="text-[22px] lg:text-[28px] font-medium text-white tracking-[-0.5px] leading-[1.1] mb-2">
+						Sybil-proof onboarding</h3>
+						<p class="text-[14px] lg:text-[16px] text-white/80 leading-[1.5] max-w-[320px]">Eliminate bots
+							and fraudulent accounts at the source with biometric proof of personhood.</p></div>
+				</div><!-- Real-Time Deepfake Detection -->
+				<div class="reveal relative rounded-[8px] overflow-hidden h-[320px] lg:h-[400px]"><img
+						src="/images/card-orgs.webp" alt="Real-Time Deepfake Detection"
+						class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+					<div class="absolute top-4 right-4 bg-white rounded-[6px] size-[40px] flex items-center justify-center">
+						<svg class="size-[20px]" viewBox="0 0 24 24" fill="#1c2125">
+							<path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0013 3.06V1h-2v2.06A8.994 8.994 0 003.06 11H1v2h2.06A8.994 8.994 0 0011 20.94V23h2v-2.06A8.994 8.994 0 0020.94 13H23v-2h-2.06z"></path>
+						</svg>
+					</div>
+					<div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8"><h3
+							class="text-[22px] lg:text-[28px] font-medium text-white tracking-[-0.5px] leading-[1.1] mb-2">
+						Real-time deepfake detection</h3>
+						<p class="text-[14px] lg:text-[16px] text-white/80 leading-[1.5] max-w-[320px]">Instantly
+							analyze video, voice, and images to identify and block synthetic media.</p></div>
+				</div><!-- Authenticated Content -->
+				<div class="reveal relative rounded-[8px] overflow-hidden h-[320px] lg:h-[400px]"><img
+						src="/images/feature-bg.webp" alt="Authenticated Content"
+						class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+					<div class="absolute top-4 right-4 bg-white rounded-[6px] size-[40px] flex items-center justify-center">
+						<svg class="size-[20px]" viewBox="0 0 24 24" fill="#1c2125">
+							<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+						</svg>
+					</div>
+					<div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8"><h3
+							class="text-[22px] lg:text-[28px] font-medium text-white tracking-[-0.5px] leading-[1.1] mb-2">
+						Authenticated content</h3>
+						<p class="text-[14px] lg:text-[16px] text-white/80 leading-[1.5] max-w-[320px]">Empower users to
+							prove their content is genuine and untampered, from origin to audience.</p></div>
+				</div><!-- Fraud-Proof Transactions -->
+				<div class="reveal relative rounded-[8px] overflow-hidden h-[320px] lg:h-[400px]"><img
+						src="/images/card-deepfake.webp" alt="Fraud-Proof Transactions"
+						class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
+					<div class="absolute top-4 right-4 bg-white rounded-[6px] size-[40px] flex items-center justify-center">
+						<svg class="size-[20px]" viewBox="0 0 24 24" fill="#1c2125">
+							<path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+						</svg>
+					</div>
+					<div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8"><h3
+							class="text-[22px] lg:text-[28px] font-medium text-white tracking-[-0.5px] leading-[1.1] mb-2">
+						Fraud-proof transactions</h3>
+						<p class="text-[14px] lg:text-[16px] text-white/80 leading-[1.5] max-w-[320px]">Add an
+							unforgeable layer of biometric security to high-value financial transactions.</p></div>
+				</div>
+			</div>
+		</div>
+	</section><!-- ==================== BUILD ON FOUNDATION OF TRUST ==================== -->
+	<section class="px-4 py-12 lg:py-16">
+		<div class="max-w-[1200px] mx-auto">
+			<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-10">
+				<div class="max-w-[700px]"><h2
+						class="text-[32px] lg:text-[48px] font-medium text-text-default tracking-[-1.6px] leading-[1.1] mb-3">
+					Build on a foundation of trust.
+				</h2>
+					<p class="text-[14px] lg:text-[16px] text-text-muted leading-[1.6] max-w-[600px]">
+						Integrate VeryAI's powerful authenticity tools into your platform with our developer-first
+						resources and enterprise-grade infrastructure.
+					</p></div>
+				<a href="/docs"
+				   class="btn-outline shrink-0 inline-flex items-center justify-center h-[40px] px-5 rounded-full border border-gray-300 text-[14px] font-medium text-text-default whitespace-nowrap">
+					Learn More
+				</a></div><!-- For Developers / For Organizations -->
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-4"><!-- For Developers -->
+				<div class="relative rounded-[8px] overflow-hidden h-[420px] lg:h-[520px]"><img
+						src="/images/card-sybil.webp" alt="For Developers"
+						class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+					<div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8"><h3
+							class="text-[32px] lg:text-[40px] font-medium text-white tracking-[-1.6px] leading-[1.1] mb-3">
+						For developers</h3>
+						<div class="flex flex-wrap gap-2 mb-3"><span
+								class="backdrop-blur-[12px] bg-white/20 flex items-center gap-1.5 px-2 py-1 rounded text-[12px] font-medium text-white"><svg
+								class="size-[10px]" viewBox="0 0 24 24" fill="white"><path
+								d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path></svg>
+Fast Integration
+</span><span class="backdrop-blur-[12px] bg-white/20 flex items-center gap-1.5 px-2 py-1 rounded text-[12px] font-medium text-white"><svg
+								class="size-[10px]" viewBox="0 0 24 24" fill="white"><path
+								d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path></svg>
+Powerful SDKs
+</span><span class="backdrop-blur-[12px] bg-white/20 flex items-center gap-1.5 px-2 py-1 rounded text-[12px] font-medium text-white"><svg
+								class="size-[10px]" viewBox="0 0 24 24" fill="white"><path
+								d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path></svg>
+Clear Documentation
+</span></div>
+						<p class="text-[13px] lg:text-[14px] text-white/80 leading-[1.5] max-w-[320px]">
+							Access our simple APIs and comprehensive SDKs to quickly deploy palm-based verification and
+							deepfake detection.
+						</p></div>
+				</div><!-- For Organizations -->
+				<div class="relative rounded-[8px] overflow-hidden h-[420px] lg:h-[520px]"><img
+						src="/images/card-content.webp" alt="For Organizations"
+						class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+					<div class="absolute bottom-0 left-0 right-0 p-6 lg:p-8"><h3
+							class="text-[32px] lg:text-[40px] font-medium text-white tracking-[-1.6px] leading-[1.1] mb-3">
+						For organizations</h3>
+						<div class="flex flex-wrap gap-2 mb-3"><span
+								class="backdrop-blur-[12px] bg-white/20 flex items-center gap-1.5 px-2 py-1 rounded text-[12px] font-medium text-white"><svg
+								class="size-[10px]" viewBox="0 0 24 24" fill="white"><path
+								d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path></svg>
+Enterprise Grade
+</span><span class="backdrop-blur-[12px] bg-white/20 flex items-center gap-1.5 px-2 py-1 rounded text-[12px] font-medium text-white"><svg
+								class="size-[10px]" viewBox="0 0 24 24" fill="white"><path
+								d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path></svg>
+Compliance Ready
+</span><span class="backdrop-blur-[12px] bg-white/20 flex items-center gap-1.5 px-2 py-1 rounded text-[12px] font-medium text-white"><svg
+								class="size-[10px]" viewBox="0 0 24 24" fill="white"><path
+								d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path></svg>
+Protect Your Brand
+</span></div>
+						<p class="text-[13px] lg:text-[14px] text-white/80 leading-[1.5] max-w-[320px]">
+							Deploy a scalable, compliance-aligned solution to protect your users, brand, and assets in
+							the age of AI.
+						</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="bg-bg-inverted"> <!-- Main footer content -->
+	<div class="px-6 pt-16 pb-12 lg:px-12 lg:pt-20 lg:pb-16 max-w-[1200px] mx-auto">
+		<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8"> <!-- Left: Logo, tagline, social -->
+			<div class="lg:col-span-5">
+				<div class="mb-3"><img src="/images/veryai-logo-white.svg" alt="VeryAI" class="h-[28px] w-auto"></div>
+				<p class="text-[14px] text-white/50 leading-[1.7] max-w-[360px] mb-6">
+					Proprietary palm-print biometrics with AI & deepfake detection to verify people and media online.
+				</p> <!-- Social icons -->
+				<div class="flex items-center gap-2.5"><a href="https://x.com/veryai" target="_blank" rel="noopener"
+														  class="flex items-center justify-center size-[38px] rounded-[8px] border border-white/12 text-white/50 hover:text-white hover:border-white/25 hover:bg-white/5 transition-all duration-200 cursor-pointer"
+														  aria-label="X">
+					<svg class="size-[15px]" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+					</svg>
+				</a><a href="https://www.linkedin.com/company/very-ai" target="_blank" rel="noopener"
+					   class="flex items-center justify-center size-[38px] rounded-[8px] border border-white/12 text-white/50 hover:text-white hover:border-white/25 hover:bg-white/5 transition-all duration-200 cursor-pointer"
+					   aria-label="LinkedIn">
+					<svg class="size-[15px]" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+					</svg>
+				</a><a href="https://discord.gg/veryai" target="_blank" rel="noopener"
+					   class="flex items-center justify-center size-[38px] rounded-[8px] border border-white/12 text-white/50 hover:text-white hover:border-white/25 hover:bg-white/5 transition-all duration-200 cursor-pointer"
+					   aria-label="Discord">
+					<svg class="size-[17px]" viewBox="0 0 127.14 96.36" fill="currentColor">
+						<path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"></path>
+					</svg>
+				</a></div>
+				<a href="mailto:hello@very.org"
+				   class="inline-flex items-center gap-2 mt-4 text-[14px] text-white/50 hover:text-white transition-colors duration-200 cursor-pointer">
+					hello@very.org
+				</a></div> <!-- Middle: Link columns -->
+			<div class="lg:col-span-7 grid grid-cols-3 gap-8"> <!-- Resources -->
+				<div><h4 class="text-[12px] font-semibold text-white/50 uppercase tracking-[1.2px] mb-4">Resources</h4>
+					<div class="flex flex-col gap-2.5"><a href="/blog"
+														  class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Blog </a><a href="/jobs"
+									class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Careers </a><a href="/brand"
+									   class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Brand Kit </a><a href="/docs"
+										 class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Documentation </a><a href="https://clawkey.ai/" target="_blank" rel="noopener"
+											 class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Clawkey </a></div>
+				</div> <!-- Legal -->
+				<div><h4 class="text-[12px] font-semibold text-white/50 uppercase tracking-[1.2px] mb-4">Legal</h4>
+					<div class="flex flex-col gap-2.5"><a href="/legal/privacy"
+														  class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Privacy Policy </a><a href="/legal/terms"
+											  class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Terms of Service </a><a href="/legal/cookies"
+												class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Cookies </a><a href="/legal/dpa"
+									   class="text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+						Data Processing Agreement </a></div>
+				</div> <!-- Get Started -->
+				<div><h4 class="text-[12px] font-semibold text-white/50 uppercase tracking-[1.2px] mb-4">Get
+					Started</h4>
+					<div class="flex flex-col gap-2.5">
+						<button id="footer-join-btn"
+								class="inline-flex items-center gap-1.5 text-[14px] text-white/80 hover:text-white transition-colors duration-200 cursor-pointer w-fit">
+							Sign up
+							<svg class="size-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								 stroke-width="2.5">
+								<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<a href="/docs/developers/introduction"
+						   class="inline-flex items-center gap-1.5 text-[14px] text-white/80 hover:text-white transition-colors duration-200 w-fit">
+							Integrate VeryAI
+							<svg class="size-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								 stroke-width="2.5">
+								<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</a></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- Bottom bar -->
+	<div class="border-t border-white/8">
+		<div class="max-w-[1200px] mx-auto px-6 py-5 lg:px-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+			<p class="text-[13px] text-[#5a6068]">&copy; 2026 Veros Inc. All rights reserved.</p></div>
+	</div>
+	<script type="module">const i = document.getElementById("footer-join-btn");
+    i?.addEventListener("click", () => {
+        const t = navigator.userAgent,
+            e = /iPhone|iPad|iPod/.test(t) || navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1,
+            n = /Android/.test(t);
+        if (e) {
+            window.location.href = "https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869";
+            return
+        }
+        if (n) {
+            window.location.href = "https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share";
+            return
+        }
+        const o = document.getElementById("join-modal");
+        o && (o.classList.remove("opacity-0", "pointer-events-none"), o.classList.add("opacity-100"), document.body.style.overflow = "hidden")
+    });</script>
+</footer> <!-- Vercel Web Analytics -->
+<script type="module">const s = new IntersectionObserver(e => {
+    e.forEach(r => {
+        r.isIntersecting && (r.target.classList.add("is-visible"), s.unobserve(r.target))
+    })
+}, {threshold: .1, rootMargin: "0px 0px -40px 0px"});
+document.querySelectorAll(".reveal").forEach(e => s.observe(e));</script>
+<!-- ==================== JOIN MODAL ==================== -->
+<div id="join-modal"
+	 class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200">
+	<!-- Backdrop -->
+	<div id="join-modal-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div> <!-- Card -->
+	<div class="relative bg-white rounded-[24px] shadow-[0_24px_80px_rgba(0,0,0,0.2)] w-full max-w-[440px] p-8 sm:p-10 flex flex-col items-center text-center">
+		<!-- Close button -->
+		<button id="join-modal-close"
+				class="absolute top-4 right-4 size-[36px] flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors text-gray-400 hover:text-gray-600">
+			<svg class="size-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+				<path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+			</svg>
+		</button> <!-- VeryAI icon --> <img src="https://assets.very.org/icons/default/icon.svg" alt="VeryAI"
+											class="size-[48px] mb-6"> <!-- Title --> <h2
+			class="font-inter text-[28px] sm:text-[32px] font-semibold text-text-default tracking-[-1px] leading-[1.15] mb-2">
+		Get the VeryAI app
+	</h2>
+		<p class="text-[15px] text-text-muted leading-[1.6] mb-8">
+			Scan the QR code to download the app
+		</p> <!-- QR Code (desktop/hover devices only) -->
+		<div class="hidden sm:flex flex-col items-center gap-2 mb-6">
+			<div class="p-4 rounded-[16px] border border-gray-100 shadow-sm">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" shape-rendering="crispEdges" role="img"
+					 aria-label="QR code to download VeryAI app" class="size-[180px]">
+					<path stroke="#1a1d2e"
+						  d="M0 0.5h7m1 0h1m7 0h5m1 0h7M0 1.5h1m5 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m3 0h1m1 0h3m3 0h1m1 0h1m1 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m1 0h1m2 0h4m1 0h2m1 0h1m2 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m3 0h2m3 0h1m1 0h4m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m2 0h1m3 0h2m1 0h2m1 0h2m1 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M8 7.5h1m1 0h1m5 0h2m2 0h1M0 8.5h1m1 0h2m1 0h3m3 0h1m2 0h1m2 0h2m1 0h1m1 0h1m2 0h1m1 0h2M1 9.5h1m1 0h2m3 0h2m4 0h1m1 0h1m1 0h7m3 0h1M1 10.5h1m1 0h1m1 0h2m2 0h1m1 0h1m4 0h1m1 0h1m1 0h5m1 0h2M1 11.5h1m2 0h2m3 0h1m2 0h2m1 0h2m1 0h1m3 0h3m3 0h1M0 12.5h3m1 0h3m1 0h4m1 0h3m1 0h2m1 0h1m4 0h2M0 13.5h2m1 0h1m3 0h1m5 0h4m2 0h1m2 0h1m3 0h3M0 14.5h1m5 0h2m1 0h1m1 0h2m1 0h1m2 0h5m1 0h2m1 0h3M0 15.5h1m2 0h1m1 0h1m4 0h2m2 0h3m3 0h1m1 0h3m2 0h1M1 16.5h1m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m5 0h2m2 0h2m1 0h1M2 17.5h1m1 0h1m2 0h1m2 0h2m3 0h1m1 0h2m1 0h1m2 0h1m1 0h3M0 18.5h1m2 0h1m1 0h2m2 0h2m1 0h4m1 0h1m3 0h1m1 0h1m2 0h1M2 19.5h1m1 0h2m2 0h1m2 0h1m1 0h3m1 0h3m1 0h1m2 0h1m1 0h1M1 20.5h3m1 0h3m1 0h2m1 0h3m2 0h10M8 21.5h1m7 0h1m2 0h2m3 0h5M0 22.5h7m1 0h3m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h2m1 0h1M0 23.5h1m5 0h1m1 0h2m1 0h4m1 0h1m3 0h1m3 0h2m2 0h1M0 24.5h1m1 0h3m1 0h1m2 0h1m1 0h1m5 0h1m2 0h5m1 0h3M0 25.5h1m1 0h3m1 0h1m1 0h1m1 0h4m1 0h3m3 0h1m1 0h3m2 0h1M0 26.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1M0 27.5h1m5 0h1m2 0h8m3 0h1m3 0h2m1 0h1M0 28.5h7m1 0h1m9 0h1m1 0h1m6 0h1"></path>
+				</svg>
+			</div>
+			<p class="text-[13px] text-text-muted">Scan with your phone to download</p></div>
+		<div class="hidden sm:flex items-center gap-3 w-full mb-6">
+			<div class="flex-1 h-px bg-gray-200"></div>
+			<span class="text-[13px] text-text-muted">or</span>
+			<div class="flex-1 h-px bg-gray-200"></div>
+		</div> <!-- App store links -->
+		<div class="flex flex-col sm:flex-row gap-3 w-full"><a
+				href="https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869" target="_blank" rel="noopener"
+				class="flex-1 hover:opacity-85 transition-opacity">
+			<svg viewBox="0 0 165 48" xmlns="http://www.w3.org/2000/svg" class="w-full h-[48px]" role="img"
+				 aria-label="Download on the App Store">
+				<rect width="165" height="48" rx="8" fill="#000"></rect>
+				<path d="M34.6 24.1c0-3.9 3.2-5.8 3.3-5.9-1.8-2.6-4.6-3-5.6-3-2.4-.2-4.6 1.4-5.8 1.4-1.2 0-3-.8-4.9-.8-2.5 0-4.9 1.5-6.2 3.7-2.6 4.6-.7 11.4 1.9 15.1 1.2 1.8 2.7 3.8 4.6 3.7 1.8-.1 2.5-1.2 4.8-1.2 2.2 0 2.9 1.2 4.8 1.1 2-.1 3.2-1.8 4.4-3.6 1.4-2 2-4 2-4.1-.1 0-3.3-1.3-3.3-5.4zm-3.1-9.9c1-1.2 1.7-2.9 1.5-4.6-1.5.1-3.2 1-4.3 2.2-.9 1.1-1.8 2.8-1.5 4.5 1.6.1 3.3-.8 4.3-2.1z"
+					  fill="#fff"></path>
+				<text x="50" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="10" fill="#fff" letter-spacing="0.3">Download on the
+				</text>
+				<text x="49" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">App Store
+				</text>
+			</svg>
+		</a> <a href="https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share" target="_blank"
+				rel="noopener" class="flex-1 hover:opacity-85 transition-opacity">
+			<svg viewBox="0 0 165 48" xmlns="http://www.w3.org/2000/svg" class="w-full h-[48px]" role="img"
+				 aria-label="Get it on Google Play">
+				<rect width="165" height="48" rx="8" fill="#000"></rect>
+				<path d="M14.5 10.3c-.3.3-.5.8-.5 1.4v24.6c0 .6.2 1.1.5 1.4l.1.1 13.8-13.8v-.3L14.5 10.3z"
+					  fill="#4285F4"></path>
+				<path d="M33 28.5l-4.6-4.6v-.3l4.6-4.6.1.1 5.4 3.1c1.6.9 1.6 2.3 0 3.2l-5.5 3.1z" fill="#FFBA00"></path>
+				<path d="M33.1 28.4L28.4 23.7 14.5 37.7c.5.5 1.3.6 2.2.1l16.4-9.4" fill="#EA4335"></path>
+				<path d="M33.1 19.1L16.7 9.7c-.9-.5-1.7-.4-2.2.1l13.9 13.9 4.7-4.6z" fill="#34A853"></path>
+				<text x="50" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="10" fill="#fff" letter-spacing="0.3">GET IT ON
+				</text>
+				<text x="49" y="35" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif"
+					  font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">Google Play
+				</text>
+			</svg>
+		</a></div>
+	</div>
+</div>
+<script type="module">const o = document.getElementById("join-modal"),
+    c = document.getElementById("join-modal-backdrop"), s = document.getElementById("join-modal-close");
+
+function a() {
+    o?.classList.remove("opacity-0", "pointer-events-none"), o?.classList.add("opacity-100"), document.body.style.overflow = "hidden"
+}
+
+function t() {
+    o?.classList.add("opacity-0", "pointer-events-none"), o?.classList.remove("opacity-100"), document.body.style.overflow = ""
+}
+
+c?.addEventListener("click", t);
+s?.addEventListener("click", t);
+document.addEventListener("keydown", e => {
+    e.key === "Escape" && t()
+});
+window.__openJoinModal = a;
+document.querySelectorAll(".join-cta").forEach(e => {
+    e.addEventListener("click", () => {
+        const n = navigator.userAgent,
+            i = /iPhone|iPad|iPod/.test(n) || navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1,
+            d = /Android/.test(n);
+        if (i) {
+            window.location.href = "https://apps.apple.com/us/app/veryai-proof-of-reality/id6746761869";
+            return
+        }
+        if (d) {
+            window.location.href = "https://play.google.com/store/apps/details?id=xyz.veros.app&pcampaignid=web_share";
+            return
+        }
+        a()
+    })
+});</script>
+<script type="module">var v = () => {
+    window.va || (window.va = function (...i) {
+        window.vaq || (window.vaq = []), window.vaq.push(i)
+    })
+}, l = "@vercel/analytics", w = "2.0.0";
+
+function c() {
+    return typeof window < "u"
+}
+
+function u() {
+    try {
+        const e = "production"
+    } catch {
+    }
+    return "production"
+}
+
+function m(e = "auto") {
+    if (e === "auto") {
+        window.vam = u();
+        return
+    }
+    window.vam = e
+}
+
+function b() {
+    return (c() ? window.vam : u()) || "production"
+}
+
+function d() {
+    return b() === "development"
+}
+
+function h(e) {
+    return e.scriptSrc ? o(e.scriptSrc) : d() ? "https://va.vercel-scripts.com/v1/script.debug.js" : e.basePath ? o(`${e.basePath}/insights/script.js`) : "/_vercel/insights/script.js"
+}
+
+function y(e, i) {
+    var r;
+    let t = e;
+    if (i) try {
+        t = {...(r = JSON.parse(i)) == null ? void 0 : r.analytics, ...e}
+    } catch {
+    }
+    m(t.mode);
+    const n = {sdkn: l + (t.framework ? `/${t.framework}` : ""), sdkv: w};
+    return t.disableAutoTrack && (n.disableAutoTrack = "1"), t.viewEndpoint && (n.viewEndpoint = o(t.viewEndpoint)), t.eventEndpoint && (n.eventEndpoint = o(t.eventEndpoint)), t.sessionEndpoint && (n.sessionEndpoint = o(t.sessionEndpoint)), d() && t.debug === !1 && (n.debug = "false"), t.dsn && (n.dsn = t.dsn), t.endpoint ? n.endpoint = t.endpoint : t.basePath && (n.endpoint = o(`${t.basePath}/insights`)), {
+        beforeSend: t.beforeSend,
+        src: h(t),
+        dataset: n
+    }
+}
+
+function o(e) {
+    return e.startsWith("http://") || e.startsWith("https://") || e.startsWith("/") ? e : `/${e}`
+}
+
+function g(e = {debug: !0}, i) {
+    var r;
+    if (!c()) return;
+    const {beforeSend: t, src: n, dataset: f} = y(e, i);
+    if (v(), t && ((r = window.va) == null || r.call(window, "beforeSend", t)), document.head.querySelector(`script[src*="${n}"]`)) return;
+    const s = document.createElement("script");
+    s.src = n;
+    for (const [a, p] of Object.entries(f)) s.dataset[a] = p;
+    s.defer = !0, s.onerror = () => {
+        const a = d() ? "Please check if any ad blockers are enabled and try again." : "Be sure to enable Web Analytics for your project and deploy again. See https://vercel.com/docs/analytics/quickstart for more information.";
+        console.log(`[Vercel Web Analytics] Failed to load script from ${n}. ${a}`)
+    }, document.head.appendChild(s)
+}
+
+g();</script>
+</body>
+</html>
